@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Salão de Beleza - Frocato"s</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+  <header>
+    <h1>Salão de Beleza</h1>
+  </header>
+
+  <main>
+    <div class="cartao">
+      <h2>Manicure e pedicure - Atendimento uumanizado com ar condicionado, cafézinho, sucos naturais e agua filtrada</h2>
+
+      <!-- IMAGEM CENTRAL (Usa uma foto de exemplo que já funciona, mas podem trocar o link) -->
+      <div class="area-imagem">
+        <img 
+          src="Salao.avif"
+          alt="Sala de atendimento, com as cadeiras confortáveise uma cliente no atendimento" 
+          class="foto-destaque"
+        >
+      </div>
+
+      <p>Atendimento especializado com hora marcada, todos os cuidados com a higiene dos equipamentos para nao oferecer riscos A saúde dos clientes, area de espera com conforto para todos.</p>
+
+      <!-- FORMULÁRIO INTERATIVO -->
+      <form>
+        <p>
+          <label for="nome-visitante">Seu Nome:</label>
+          <input type="text" id="nome-visitante" placeholder="Digite seu nome">
+        </p>
+         <h3>Escolha a Opção Desejada</h3>
+
+        <!-- Exemplo de RADIO (Escolha ÚNICA) -->
+        <fieldset>
+          <legend>1. Escolha qual serviço deseja:</legend>
+          
+          <input type="radio" id="op1" name="favorito" value="opcao1">
+          <label for="op1">Horário para Pé e Mão</label><br>
+
+          <input type="radio" id="op2" name="favorito" value="opcao2">
+          <label for="op2">Horario somente Pé</label><br>
+
+          <input type="radio" id="op3" name="favorito" value="opcao2">
+          <label for="op3">Horario somente Mão</label>
+        </fieldset>
+
+        <!-- Exemplo de CHECKBOX (Escolha MÚLTIPLA - Novidade!) -->
+        <fieldset>
+          <legend>2. Marque TODAS as opções que você gosta (Checkbox):</legend>
+
+          <input type="checkbox" id="check1" name="interesses" value="item1">
+          <label for="check1">Voce prefere atendimento rápido</label><br>
+
+          <input type="checkbox" id="check2" name="interesses" value="item2">
+          <label for="check2">Voce prefere atendimento Lento</label><br>
+
+          <input type="checkbox" id="check3" name="interesses" value="item3">
+          <label for="check3">Voce Prefere atendimento intermediário</label>
+        </fieldset>
+
+        <button type="submit">Enviar Respostas</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>Atividade de fixação de CSS - 2026</p>
+  </footer>
+
+</body>
+</html>
